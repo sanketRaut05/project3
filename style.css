@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.img {
+    background-image: url("img/developer.png");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.center {
+
+    /* text-align: center; */
+    font-size: 6vw;
+    color: white;
+    /* font-weight: 200;
+    text-indent: 400px;
+    padding-top: 20px; */
+    word-spacing: 10px;
+    letter-spacing: 1.2px;
+    font-variant: small-caps;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.center2 {
+    text-align: center;
+    font-variant: small-caps;
+    word-spacing: 10px;
+    letter-spacing: 1.2px;
+}
+
+.size {
+    font-weight: 100;
+    font-size: 72px;
+
+}
+
+.lgsize {
+    font-size: 96px;
+    font-weight: 100;
+}
+
+span {
+    font-size: 2rem;
+}
+
+.dark {
+    background-color: black;
+    color: white;
+    padding: 25px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card {
+    height: 400px;
+    width: 320px;
+    box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.2);
+    /* border: 2px solid red; */
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.card:hover{
+    transform: scale(1.04);
+  box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.3);
+  transition: 0.2s ease-in-out;
+}
+
+.des,
+h1,
+p {
+    padding: 10px;
+}
+
+.top {
+    margin-top: 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left {
+    /* float: left; */
+    background-color: #515603;
+    /* height: 300px; */
+    width: 100%;
+    flex-basis: 50%;
+    color: white;
+    padding: 29px;
+}
+
+.left h1 {
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.right {
+    /* float: right; */
+    background-color: brown;
+    /* height: 300px; */
+    flex-basis: 50%;
+    width: 100%;
+    color: white;
+    padding: 29px;
+}
+.right h1{
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+footer {
+    height: 50px;
+    text-transform: uppercase;
+    background-color: #000;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+@media(max-width:490px){
+    .left{
+        flex-basis: 100%;
+    }
+    .right{
+        flex-basis: 100%;
+    }
+}
